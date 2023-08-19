@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+:root{
+    --dark1:#222831;
+    --fewdark1:#393E46;
+    --fewlight1:#FFD369;
+    --light1:#EEEEEE;
+
+    --dark:#A7D129;
+    --fewdark:#616F39;
+    --fewlight:#3E432E;
+    --light:#111;
+
+    /* --dark:#000000;
+    --fewdark:#3E3636;
+    --fewlight:#D72323;
+    --light:#F5EDED; */
+
+}
+body{
+    background-color: var(--light);
+}
+::selection{
+    background-color: var(--fewdark);
+    color: var(--light);
+}
+div.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+div.form{
+    color: var(--light);
+    background-color: var(--fewdark);
+    border: 1px solid var(--dark);
+    padding: 30px;
+    border-radius: 5px;
+}
+div.setting h2{
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+input,
+select{
+    margin-bottom:10px ;
+}
+label{
+    font-size: 18px;
+}
+div.setting div:first-of-type div{
+    margin:5px 0 ;
+    margin-left: 60% ;
+}
+
+select{
+    margin: 10px 0;
+    outline: 0;
+    border: 0;
+    padding:2px 10px;
+    outline: 1px solid var(--dark);
+    border-radius: 3px;
+    font-size: 16px;
+    background-color: var(--light);
+    color: var(--dark);
+}
+div.setting > div:last-of-type > input{
+    margin: 10px 0;
+    width: 40px;
+    outline: 0;
+    border: 0;
+    outline: 1px solid var(--dark);
+    border-radius: 3px;
+    font-size: 16px;
+    background-color: var(--light);
+    color: var(--dark);
+}
+div.setting > div:last-of-type > input:focus , select:focus{
+
+    outline: 3px solid var(--dark);
+}
+.submit{
+    height: 30px;
+    width: 100px;
+    border: 0;
+    font-weight: bold;
+    outline: 1px solid var(--light);
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: var(--dark);
+    color: var(--light);
+    margin-top: 10px;
+    margin-left: 50%;
+    transform: translate(-50%,0);
+    transition: opacity .5s;
+}
+.submit:hover{
+    opacity: .7;
+}
+
+.quiz , .finalResult{
+    display: none;
+}
+
+
+.titleOfQuestion{
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.question{
+    display: inline-block;
+    width: 40%;
+    margin: 10px 0;
+    margin-left: 9%;
+}
+.count {
+    color:#272c34;
+    font-weight: bold;
+}
+
+
+.finalResult h2{
+    margin-bottom: 10px;
+}
+
+@media (max-width : 580px ) and (min-width:0) {
+    .question{
+        display: inline-block;
+        width: 100%;
+        margin: 15px 0;
+        margin-left: 0%;
+    }
+    input,
+    select{
+        margin: 10px;
+        margin-left: 0;
+    }
+    
+    select{
+        outline: 0;
+        border: 0;
+        display: block;
+        width: 100%;
+        padding:2px 10px;
+        outline: 1px solid var(--dark);
+        border-radius: 3px;
+        font-size: 16px;
+        background-color: var(--light);
+        color: var(--dark);
+    }
+    .inputRadio{
+        display: block;
+    }
+    span label{
+        font-size: 16px;
+    }
+    .finalResult h2{
+        font-size: 18px;
+    }       
+
+    .titleOfQuestion{
+        font-size: 20px;
+        font-weight: bold;
+        margin: 10px 0;
+    }
+    span.score{    
+        margin-bottom: 20px;
+        display: block;
+        text-align: center;
+    }
+    div.form.quiz{
+        padding: 20px;
+        margin: 0 20px;
+    }
+    
+    div.setting h2{
+        font-size: 24px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    div.setting div:first-of-type div{
+        margin:5px 0 ;
+        margin-left: 60% ;
+    }
+}

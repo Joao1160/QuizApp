@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Quiz App</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="finalResult form">
+        <h2>You answered all questions</h2>
+      <span class="score">your score : 10</span>
+      <button id="again" class="submit">Again Quiz</button>
+    </div>
+    <div class="quiz form">
+      <div class="count">
+        <label for="">Your Progres </label>
+        <span class="current">0</span>
+        <span>/</span>
+        <span class="total">10</span>
+      </div>
+      <p class="titleOfQuestion"></p>
+      <label id="a1" class="question"></label>
+      <label id="a2" class="question"></label>
+      <label id="a3" class="question"></label>
+      <label id="a4" class="question"></label>
+      
+      <button id="next" class="submit">Submit</button>
+    </div>
+    <div class="setting form">
+      <h2>Quiz Setting</h2>
+      <label for="category">Select Category</label>
+      <select name="" id="category">
+        <option value="" hidden>Choose</option>
+        <option value="9">General Knowlage</option>
+        <option value="27">Animal</option>
+        <option value="23">Histroy</option>
+        <option value="21">Sports</option>
+      </select>
+      
+      <div>
+        <label for="difficulty">Select Difficulty </label>
+
+        <span class="inputRadio"><input type="radio" name="radio"  id="easy" /> <label for="easy">  Easy </label></span>
+        <span class="inputRadio"><input type="radio" name="radio" id="medium" /> <label for="medium"> Medium </label></span>
+        <span class="inputRadio"><input type="radio" name="radio" id="hard" /> <label for="hard"> Hard </label></span>
+      </div>
+      
+      <div>
+        <label for="nQuestions">Number of Questions</label>
+        <input type="number" name="" id="nQuestions" />
+      </div>
+      
+      <button id="startBtn" class="submit">Start Quiz</button>
+    </div>
+    
+        </div>
+    
+    <script type="module" src="js/script.js"></script>
+  </body>
+  </html>
+  
