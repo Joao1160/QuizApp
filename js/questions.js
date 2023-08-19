@@ -34,8 +34,13 @@ class Question {
   render() {
     this.questionDom.innerHTML = this.question;
     this.answerDom.forEach((ele, index) => {
+if(this.answers[index] != undefined){
+      ele.style.display = "inline-block";
       ele.innerHTML =
-        `<input type="radio" name="radio" id="" />` + this.answers[index];
+      `<input type="radio" name="radio" id="" />` + this.answers[index];
+     }else{
+      ele.style.display = "none";
+     }
     });
   }
 }
